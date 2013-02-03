@@ -1,0 +1,28 @@
+These are the previous results on the small Romania map, with the new A Star search results included:
+
+Total nodes used
+----------------
+
+         Graph        Tree
+BFS      1083         75973
+DFS      75973    (doesn't finish)
+ID                    41636
+AS        180          341
+
+Max nodes in frontier	
+----------------
+
+         Graph        Tree
+BFS       210         44217
+DFS      44217    (doesn't finish)
+ID     NA - there is no frontier to ask.
+AS         97          218
+
+The results for npuzzle are similar.
+
+The A* search can solve the tour for the large romania map, but I have not included this in the results since
+it cannot be compared to anything.
+
+In conclusion, the A* search with this heuristic drastically decreases the amount of time and memory that
+it takes to solve these search problems, and since these solutions are also optimal, it seems like the best
+type of search to use.

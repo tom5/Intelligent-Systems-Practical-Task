@@ -1,0 +1,33 @@
+On the small Romania map, the results were as follows:
+
+Total nodes used
+----------------
+
+         Graph        Tree
+BFS      1083         75973
+DFS      75973    (doesn't finish)
+ID                    41636
+
+
+Max nodes in frontier	
+----------------
+
+         Graph        Tree
+BFS       210         44217
+DFS      44217    (doesn't finish)
+ID                NA - there is no frontier to ask.
+
+
+The results for the npuzzle task are similar.
+
+
+From this I can conclude that while the running time might
+be slower for a graph search, especially if equals is an expensive
+operation, the cost in memory for tree searches is very expensive, 
+making it much less effective for this task.
+In addition, the presented solutions for tree searches is often not
+very optimal.
+
+I would have expected the DFS to cost less in memory, but this is clearly not
+the case because of the huge increase in the complexity of the first solution found,
+and the amount of state space it is required to search.
